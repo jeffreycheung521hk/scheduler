@@ -1,0 +1,20 @@
+[package]
+name = "scheduler-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 本地共用模組
+scheduler-core = { path = "../scheduler-core" }
+
+# Workspace 共用依賴
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+tokio-stream = { workspace = true }
+bytes = { workspace = true }
+clap = { workspace = true }
+futures-util = { workspace = true }   # ← 新增 (for SinkExt)

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 3,
+    "spec": {
+      "cmd": "/bin/echo",
+      "args": [
+        "hello",
+        "world"
+      ],
+      "output_path": "./out.log",
+      "append": true,
+      "schedule": {
+        "Once": "2025-08-16T21:22:04+09:00"
+      }
+    }
+  }
+]

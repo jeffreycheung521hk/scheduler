@@ -1,0 +1,23 @@
+[package]
+name = "scheduler-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+scheduler-core = { path = "../scheduler-core" }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+
+bytes = { workspace = true }          # ← 需要 BytesMut
+futures-util = { workspace = true }   # ← 新增 (for SinkExt)
+
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+tracing-appender = { workspace = true }
+dashmap = { workspace = true }
+tokio-stream = { workspace = true }
